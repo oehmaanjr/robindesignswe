@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: playfairdisplaysc;
+  src: url(fonts/playfairdisplaysc-regular.woff) format("woff"),
+    url(fonts/playfairdisplaysc-regular.woff2) format("woff2");
+}
+p {
+  font-family: "PT Serif", serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: playfairdisplaysc;
+}
+.text-top-nav {
+  font-size: 0.6rem;
+}
+
+.picture-sign-size {
+  font-size: 1.7rem;
+}
+
+body {
+  /* font-family: playfairdisplaysc; */
+  font-family: cursive;
+  background-color: hsl(0, 0%, 9%);
+}
+.full-width {
+  background-color: hsl(0, 0%, 9%);
+}
+/* .full-mini-nav {
+  background-color: hsl(0, 0%, 0%);
+} */
+.card-bg,
+.card-bg .card-body {
+  background-color: rgb(23, 23, 23) !important;
+  overflow: hidden;
+}
+.light-shadow {
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2) !important;
+}
+/* ------------ TRANSFORM & TRANSITION ---------------------- */
+.social-media-icon {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.social-media-icon:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+/* --------------------------------------------------------- */
+
+.accordion-button::after {
+  filter: brightness(0) invert(1);
+}
+
+.card-text-size {
+  font-size: 1.5rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: transparent; /* Tar bort den inre bakgrundsfärgen */
+  border: none; /* Tar bort eventuell kant */
+}
+
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+  content: ""; /* Tar bort den inre ikonen som standard */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent; /* Gör knappen genomskinlig */
+  border: none;
+  border-radius: 50%; /* Gör knappen rund */
+  padding: 0; /* Ta bort padding för att hålla det enkelt */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 40px; /* Justera storleken på cirkeln */
+  height: 40px; /* Justera storleken på cirkeln */
+  background-color: #333; /* Ändra färg på bakgrunden om du vill */
+  border-radius: 50%; /* Gör bakgrunden rund */
+}
+
+/* HOVRING */
+
+.hover-img {
+  opacity: 0;
+  transition: opacity 1s ease;
+  z-index: 1;
+}
+
+.position-relative:hover .hover-img {
+  opacity: 1;
+}
+
+/* .position-relative:hover .main-img {
+  opacity: 0;
+} */
