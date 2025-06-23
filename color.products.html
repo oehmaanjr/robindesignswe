@@ -1,0 +1,3174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NodeJs & Bootstrap - COLOR PROCUCTS</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Bootstrap Icons -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+
+    <!-- Bootstrap CSS via CDN -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!---------------------------------- NAV ------------------------------------------------------>
+
+    <!-------- Sektion med ikoner ovanför navigationen ------->
+
+    <div class="bg-black">
+      <div class="container">
+        <div
+          class="d-flex justify-content-center align-items-center mb-1"
+          style="height: 40px"
+        >
+          <div class="d-flex">
+            <section class="d-flex align-items-center px-1">
+              <img
+                src="Bilder-Header-Footer/postbil-vit-S.png"
+                alt="Trygga köp-bild"
+                style="width: 35px; height: auto"
+                class="mx-1"
+              />
+              <p class="mb-0 text-white text-top-nav">FRAKT 18:-</p>
+            </section>
+            <section class="d-flex align-items-center px-1">
+              <img
+                src="Bilder-Header-Footer/Tryggt-köp-S.png"
+                alt="Trygga köp-bild"
+                style="width: 35px; height: auto"
+                class="mx-1"
+              />
+              <p class="mb-0 text-white text-top-nav">TRYGGA KÖP</p>
+            </section>
+            <section class="d-flex align-items-center px-1">
+              <img
+                src="Bilder-Header-Footer/pilar-retur-white-S.png"
+                alt="Trygga köp-bild"
+                style="width: 35px; height: auto"
+                class="mx-1"
+              />
+              <p class="mb-0 text-white text-top-nav">ÖPPET KÖP</p>
+            </section>
+            <section class="d-flex align-items-center px-1">
+              <img
+                src="Bilder-Header-Footer/Garanti.png"
+                alt="Trygga köp-bild"
+                style="width: 25px; height: auto"
+                class="mx-2"
+              />
+              <p class="mb-0 text-white text-top-nav">GARANTI</p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---------------------------------- NAV ------------------------------------------------------>
+
+    <div
+      class="full-width"
+      style="
+        background-image: url('bilder-maindel-index/bkg-Rocks-Gold-upsidown-headermeny.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+      "
+    >
+      <nav class="navbar navbar-expand-lg navbar-dark text-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <!------------ LOGO -------------->
+            <img
+              src="Logos/logo-RD-white.png"
+              alt="RD-Logo"
+              class="img-fluid m-2"
+              style="width: 50px; height: auto"
+          /></a>
+
+          <!---------------------------------->
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse fw-bold" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Hem</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Våra Armband
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="all.products.html"
+                      >Alla armband</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="gold.products.html"
+                      >Armband i Guld</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="silver.products.html"
+                      >Armband i Silver</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="color.products.html"
+                      >Armband i Färg</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="for-henne.html"
+                      >Armband för Henne</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item border-top border-black"
+                      href="skapa-ditt-eget-armband.html"
+                      >Designa eget Kattarmband</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="picture-gallery.html">Bildgalleri</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact-page.html">Kontakt</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="FAQ.html">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="recentions.html">Kundrecentioner</a>
+              </li>
+            </ul>
+
+            <!------------ SÖK - NOTIS - KUNDKORG -------------->
+
+            <!--             <div
+              class="d-flex align-items-center gap-3 mt-3 mt-lg-0 ms-lg-auto"
+            >
+              <a href="#" class="text-white fs-5"
+                ><i class="bi bi-search-heart-fill fs-3"></i
+              ></a>
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <a href="#" class="text-white fs-5 position-relative">
+                <i class="bi bi-bell-fill fs-3"></i> -->
+            <!--                 <span
+                  class="position-absolute top-0 start-100 translate-middle badge-sm badge rounded-pill bg-warning"
+                >
+                  3
+                </span> -->
+            <!--               </a>
+              <a href="#" class="text-white fs-5 position-relative">
+                <i class="bi bi-bag-dash-fill fs-3"></i> -->
+            <!--                 <span
+                  class="position-absolute top-0 start-100 translate-middle badge-sm badge rounded-pill bg-danger"
+                >
+                  2
+                </span> -->
+            <!--               </a>
+            </div> -->
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!------------------------------------------------------------------------>
+
+    <main>
+      <section
+        class="text-center my-1"
+        style="
+          background-image: url('Bilder-Header-Footer/header-mini-color-7-S.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          width: 100%;
+          height: 300px;
+          display: flex;
+          flex-direction: column; /* Staplar innehållet vertikalt */
+          justify-content: flex-start; /* Centrerar inte horisontellt längre */
+        "
+      >
+        <!--         <h1 class="fw-bold text-white my-1 pt-4" style="margin-bottom: auto">
+          PÄRLARMBAND I FÄRG
+        </h1> -->
+
+        <!-- Knappar - Till nästa sida -->
+
+        <div class="container mb-3" style="margin-top: auto">
+          <div class="row justify-content-center">
+            <div class="col-6 col-md-auto d-flex justify-content-center">
+              <a
+                href="silver.products.html"
+                class="btn btn-dark border px-4 py-2 d-flex align-items-center justify-content-center text-center rounded-5 fw-bold"
+                style="width: 200px; height: 50px"
+              >
+                <i class="bi bi-caret-left-fill"></i> Armband i Silver
+              </a>
+            </div>
+            <div class="col-6 col-md-auto d-flex justify-content-center">
+              <a
+                href="for-henne.html"
+                class="btn btn-light border px-4 py-2 d-flex align-items-center justify-content-center text-center rounded-5 fw-bold"
+                style="width: 200px; height: 50px"
+              >
+                Armband för Henne <i class="bi bi-caret-right-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--------------------------------- PRODUKTER - RAD 1 ------------------------------------------------->
+
+      <div
+        class="full-width px-md-4 px-lg-5"
+        style="
+          background: linear-gradient(
+            to right,
+
+            #ffffff,
+            #ffffff,
+            #ffeac3,
+            #cfa048,
+            rgb(252, 255, 90),
+            #91ff52,
+            #d9ffc3,
+            #ffffff,
+            #ffffff
+          );
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          min-height: 400px;
+        "
+      >
+        <div
+          class="container d-flex justify-content-center align-items-center pt-3 pb-1"
+        >
+          <img
+            src="Texter/Colour.png"
+            alt="Rullande produktbilder i guld"
+            class="img-fluid"
+            style="height: 70px; width: auto"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="container">
+          <div
+            class="row row row-cols-2 row-cols-md-2 row-cols-lg-4 g-4 mt-1 pb-5"
+          >
+            <div class="col">
+              <div
+                class="card h-100 border-0 light-shadow card-bg text-light text-center"
+              >
+                <!-- Bildcontainer med positionering -->
+                <a
+                  href="products/product-Djungle.html"
+                  class="text-decoration-none"
+                >
+                  <div class="position-relative">
+                    <!-- Standardbild -->
+                    <img
+                      src="Armband-Hover/Djungle-Green-Pineapple-S.jpg"
+                      class="card-img-top rounded main-img border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(134, 255, 21, 0.5)"
+                      alt="Produkt"
+                      loading="lazy"
+                    />
+                    <!-- Hoverbild -->
+                    <img
+                      src="Armband FÄRG/djungle-green-white-S.png"
+                      class="card-img-top rounded hover-img position-absolute top-0 start-0 border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(134, 255, 21, 0.5)"
+                      alt="Produkt Hover"
+                      loading="lazy"
+                    />
+                    <div
+                      class="badge position-absolute top-0 end-0 m-2 bg-warning text-dark fw-bold rounded-pill modul-info"
+                      style="z-index: 10"
+                    >
+                      Snart slut
+                    </div>
+                  </div>
+                </a>
+
+                <!---------- PRODUKTINFO ------------------------------->
+
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Djungle - Green Pineapple</h5>
+                  <p class="text-white fw-bold">- 8mm</p>
+
+                  <div class="d-flex justify-content-center">
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star-ej-ifylld.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                    />
+                    <span class="ms-2 text-white">(4)</span>
+                  </div>
+                  <p class="fw-bold mt-2">
+                    <s class="text-danger">109kr</s> 99kr
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!--------- Produkt 2 ------------->
+            <div class="col">
+              <div
+                class="card h-100 border-0 light-shadow card-bg text-light text-center"
+              >
+                <!-- Bildcontainer med positionering -->
+                <a
+                  href="products/product-Millefiori.html"
+                  class="text-decoration-none"
+                >
+                  <div class="position-relative">
+                    <!-- Standardbild -->
+                    <img
+                      src="Armband-Hover/Millefiori-S.jpg"
+                      class="card-img-top rounded main-img border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(20, 239, 255, 0.5)"
+                      alt="Produkt"
+                      loading="lazy"
+                    />
+                    <!-- Hoverbild -->
+                    <img
+                      src="Armband FÄRG/millefiori-coloured-S.png"
+                      class="card-img-top rounded hover-img position-absolute top-0 start-0 border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(20, 239, 255, 0.5)"
+                      alt="Produkt Hover"
+                      loading="lazy"
+                    />
+                  </div>
+                </a>
+
+                <!---------- PRODUKTINFO ------------------------------->
+
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Millefiori - Coloured</h5>
+                  <p class="text-white fw-bold">- 6mm</p>
+
+                  <div class="d-flex justify-content-center">
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star-ej-ifylld.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                    />
+                    <span class="ms-2 text-w">(4.5)</span>
+                  </div>
+                  <p class="fw-bold mt-2">
+                    <s class="text-danger">119kr</s> 109kr
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!--------- Produkt 3 ------------->
+
+            <div class="col">
+              <div
+                class="card h-100 border-0 light-shadow card-bg text-light text-center"
+              >
+                <!-- Bildcontainer med positionering -->
+                <a
+                  href="products/product-FlowerPower.html"
+                  class="text-decoration-none"
+                >
+                  <div class="position-relative">
+                    <!-- Standardbild -->
+                    <img
+                      src="Armband-Hover/Flowerpower-S.jpg"
+                      class="card-img-top rounded main-img border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(229, 32, 255, 0.5)"
+                      alt="Produkt"
+                      loading="lazy"
+                    />
+                    <!-- Hoverbild -->
+                    <img
+                      src="Armband FÄRG/flower-power-product-S.png"
+                      class="card-img-top rounded hover-img position-absolute top-0 start-0 border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(229, 32, 255, 0.5)"
+                      alt="Produkt Hover"
+                      loading="lazy"
+                    />
+                    <div
+                      class="badge position-absolute top-0 end-0 m-2 bg-dark text-dark text-white fw-bold rounded-pill modul-info"
+                      style="z-index: 10"
+                    >
+                      Storsäljare
+                    </div>
+                  </div>
+                </a>
+
+                <!---------- PRODUKTINFO ------------------------------->
+
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Flowerpower - Coloured</h5>
+                  <p class="text-white fw-bold">- 8mm</p>
+
+                  <div class="d-flex justify-content-center">
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star-halvt-ifylld.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                    />
+                    <span class="ms-2 text-white">(4.5)</span>
+                  </div>
+                  <p class="fw-bold mt-2">
+                    <s class="text-danger">109kr</s> 99kr
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!--------- Produkt 4 ------------->
+
+            <div class="col">
+              <div
+                class="card h-100 border-0 light-shadow card-bg text-light text-center"
+              >
+                <!-- Bildcontainer med positionering -->
+                <a
+                  href="products/product-Vulcano.html"
+                  class="text-decoration-none"
+                >
+                  <div class="position-relative">
+                    <!-- Standardbild -->
+                    <img
+                      src="Armband-Hover/Vulcano-Fire-S.jpg"
+                      class="card-img-top rounded main-img border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(255, 145, 0, 0.5)"
+                      alt="Produkt"
+                      loading="lazy"
+                    />
+                    <!-- Hoverbild -->
+                    <img
+                      src="Armband FÄRG/vulcano-firered-S.png"
+                      class="card-img-top rounded hover-img position-absolute top-0 start-0 border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(255, 145, 0, 0.5)"
+                      alt="Produkt Hover"
+                      loading="lazy"
+                    />
+                  </div>
+                </a>
+
+                <!---------- PRODUKTINFO ------------------------------->
+
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Vulcano Firered</h5>
+                  <p class="text-white fw-bold">- 8/6mm</p>
+
+                  <div class="d-flex justify-content-center">
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star-halvt-ifylld.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                    />
+                    <span class="ms-2 text-w">(4,5)</span>
+                  </div>
+                  <p class="fw-bold mt-2">
+                    <s class="text-danger">109kr</s> 99kr
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--------------------------------- PRODUKTER - RAD 2 ------------------------------------------------->
+
+        <div class="container">
+          <div
+            class="row row row-cols-2 row-cols-md-2 row-cols-lg-4 g-4 pb-5 pt-2"
+          >
+            <div class="col">
+              <div
+                class="card h-100 border-0 light-shadow card-bg text-light text-center"
+              >
+                <!-- Bildcontainer med positionering -->
+                <a
+                  href="products/product-Buddha-Luxury.html"
+                  class="text-decoration-none"
+                >
+                  <div class="position-relative">
+                    <!-- Standardbild -->
+                    <img
+                      src="Armband-Hover/Buddha-Luxury-Blue-S.jpg"
+                      class="card-img-top rounded main-img border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(78, 95, 255, 0.5)"
+                      alt="Produkt"
+                      loading="lazy"
+                    />
+                    <!-- Hoverbild -->
+                    <img
+                      src="Armband FÄRG/Buddha-luxery-blue-S.png"
+                      class="card-img-top rounded hover-img position-absolute top-0 start-0 border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(78, 95, 255, 0.5)"
+                      alt="Produkt Hover"
+                      loading="lazy"
+                    />
+                    <div
+                      class="badge position-absolute top-0 end-0 m-2 bg-success text-dark fw-bold rounded-pill modul-info"
+                      style="z-index: 10"
+                    >
+                      Kundens favorit
+                    </div>
+                  </div>
+                </a>
+
+                <!---------- PRODUKTINFO ------------------------------->
+
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Buddha Luxury - Blue</h5>
+                  <p class="text-white fw-bold">- 8mm</p>
+
+                  <div class="d-flex justify-content-center">
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                    />
+                    <span class="ms-2 text-white">(5)</span>
+                  </div>
+                  <p class="fw-bold mt-2">
+                    <s class="text-danger">119kr</s> 109kr
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!--------- Produkt 2 ------------->
+            <div class="col">
+              <div
+                class="card h-100 border-0 light-shadow card-bg text-light text-center"
+              >
+                <!-- Bildcontainer med positionering -->
+                <a
+                  href="products/product-Buddha-Luxury.html"
+                  class="text-decoration-none"
+                >
+                  <div class="position-relative">
+                    <!-- Standardbild -->
+                    <img
+                      src="Armband-Hover/Buddha-Luxury-Red-S.jpg"
+                      class="card-img-top rounded main-img border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(255, 70, 45, 0.5)"
+                      alt="Produkt"
+                      loading="lazy"
+                    />
+                    <!-- Hoverbild -->
+                    <img
+                      src="Armband FÄRG/Buddha-luxery-red-S.png"
+                      class="card-img-top rounded hover-img position-absolute top-0 start-0 border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(255, 70, 45, 0.5)"
+                      alt="Produkt Hover"
+                      loading="lazy"
+                    />
+                    <div
+                      class="badge position-absolute top-0 end-0 m-2 bg-success text-dark fw-bold rounded-pill modul-info"
+                      style="z-index: 10"
+                    >
+                      Kundens favorit
+                    </div>
+                  </div>
+                </a>
+
+                <!---------- PRODUKTINFO ------------------------------->
+
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Buddha Luxury - Red</h5>
+                  <p class="text-white fw-bold">- 8mm</p>
+
+                  <div class="d-flex justify-content-center">
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                    />
+                    <span class="ms-2 text-w">(5)</span>
+                  </div>
+                  <p class="fw-bold mt-2">
+                    <s class="text-danger">119kr</s> 99kr
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!--------- Produkt 3 ------------->
+
+            <div class="col">
+              <div
+                class="card h-100 border-0 light-shadow card-bg text-light text-center"
+              >
+                <!-- Bildcontainer med positionering -->
+                <a
+                  href="products/product-Buddha-Luxury.html"
+                  class="text-decoration-none"
+                >
+                  <div class="position-relative">
+                    <!-- Standardbild -->
+                    <img
+                      src="Armband-Hover/Buddha-Luxury-Green-S.jpg"
+                      class="card-img-top rounded main-img border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(134, 255, 21, 0.5)"
+                      alt="Produkt"
+                      loading="lazy"
+                    />
+                    <!-- Hoverbild -->
+                    <img
+                      src="Armband FÄRG/buddha-luxery-green-S.png"
+                      class="card-img-top rounded hover-img position-absolute top-0 start-0 border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(134, 255, 21, 0.5)"
+                      alt="Produkt Hover"
+                      loading="lazy"
+                    />
+                    <div
+                      class="badge position-absolute top-0 end-0 m-2 bg-success text-dark fw-bold rounded-pill modul-info"
+                      style="z-index: 10"
+                    >
+                      Kundens favorit
+                    </div>
+                  </div>
+                </a>
+
+                <!---------- PRODUKTINFO ------------------------------->
+
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Buddha Luxury - Green</h5>
+                  <p class="text-white fw-bold">- 8mm</p>
+
+                  <div class="d-flex justify-content-center">
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                    />
+                    <span class="ms-2 text-white">(5)</span>
+                  </div>
+                  <p class="fw-bold mt-2">
+                    <s class="text-danger">119kr</s> 109kr
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!--------- Produkt 4 ------------->
+
+            <div class="col">
+              <div
+                class="card h-100 border-0 light-shadow card-bg text-light text-center"
+              >
+                <!-- Bildcontainer med positionering -->
+                <a
+                  href="products/product-ChackraWisedome.html"
+                  class="text-decoration-none"
+                >
+                  <div class="position-relative">
+                    <!-- Standardbild -->
+                    <img
+                      src="Armband-Hover/Chackra-S.jpg"
+                      class="card-img-top rounded main-img border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(116, 6, 110, 0.5)"
+                      alt="Produkt"
+                      loading="lazy"
+                    />
+                    <!-- Hoverbild -->
+                    <img
+                      src="Armband FÄRG/chackra-coloured-S.png"
+                      class="card-img-top rounded hover-img position-absolute top-0 start-0 border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(116, 6, 110, 0.5)"
+                      alt="Produkt Hover"
+                      loading="lazy"
+                    />
+                  </div>
+                </a>
+
+                <!---------- PRODUKTINFO ------------------------------->
+
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Chackra Wisdome - Black</h5>
+                  <p class="text-white fw-bold">- 8/6mm</p>
+
+                  <div class="d-flex justify-content-center">
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star-halvt-ifylld.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star-ej-ifylld.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                    />
+                    <span class="ms-2 text-w">(3,5)</span>
+                  </div>
+                  <p class="fw-bold mt-2">
+                    <s class="text-danger">99kr</s> 89kr
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--------------------------------- PRODUKTER - RAD 3 ------------------------------------------------->
+
+        <div class="container">
+          <div
+            class="row row row-cols-2 row-cols-md-2 row-cols-lg-4 g-4 pb-5 pt-2"
+          >
+            <div class="col">
+              <div
+                class="card h-100 border-0 light-shadow card-bg text-light text-center"
+              >
+                <!-- Bildcontainer med positionering -->
+                <a
+                  href="products/product-SummerTopic.html"
+                  class="text-decoration-none"
+                >
+                  <div class="position-relative">
+                    <!-- Standardbild -->
+                    <img
+                      src="Armband-Hover/Summer-Topic-Green-S.jpg"
+                      class="card-img-top rounded main-img border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgb(66, 199, 54)"
+                      alt="Produkt"
+                      loading="lazy"
+                    />
+                    <!-- Hoverbild -->
+                    <img
+                      src="Armband FÄRG/Summer-Topic-Green-S.jpg"
+                      class="card-img-top rounded hover-img position-absolute top-0 start-0 border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgb(66, 199, 54)"
+                      alt="Produkt Hover"
+                      loading="lazy"
+                    />
+                    <div
+                      class="badge position-absolute top-0 end-0 m-2 bg-warning text-dark fw-bold rounded-pill modul-info"
+                      style="z-index: 10"
+                    >
+                      Få kvar
+                    </div>
+                  </div>
+                </a>
+
+                <!---------- PRODUKTINFO ------------------------------->
+
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">
+                    Summer Topic - Green Malakit
+                  </h5>
+                  <p class="text-white fw-bold">- 6mm</p>
+
+                  <div class="d-flex justify-content-center">
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star-ej-ifylld.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                    />
+                    <span class="ms-2 text-white">(4)</span>
+                  </div>
+                  <p class="fw-bold mt-2">
+                    <s class="text-danger">119kr</s> 109kr
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!--------- Produkt 2 ------------->
+            <div class="col">
+              <div
+                class="card h-100 border-0 light-shadow card-bg text-light text-center"
+              >
+                <!-- Bildcontainer med positionering -->
+                <a
+                  href="products/product-SummerTopic.html"
+                  class="text-decoration-none"
+                >
+                  <div class="position-relative">
+                    <!-- Standardbild -->
+                    <img
+                      src="Armband-Hover/Summer-Topic-Orange-S.jpg"
+                      class="card-img-top rounded main-img border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(255, 178, 12, 0.5)"
+                      alt="Produkt"
+                      loading="lazy"
+                    />
+                    <!-- Hoverbild -->
+                    <img
+                      src="Armband FÄRG/Summer-Topic-Orange-S.jpg"
+                      class="card-img-top rounded hover-img position-absolute top-0 start-0 border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(255, 178, 12, 0.5)"
+                      alt="Produkt Hover"
+                      loading="lazy"
+                    />
+                    <div
+                      class="badge position-absolute top-0 end-0 m-2 bg-warning text-dark fw-bold rounded-pill modul-info"
+                      style="z-index: 10"
+                    >
+                      Få kvar
+                    </div>
+                  </div>
+                </a>
+
+                <!---------- PRODUKTINFO ------------------------------->
+
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">
+                    Summer Topic - Orange Stone
+                  </h5>
+                  <p class="text-white fw-bold">- 6mm</p>
+
+                  <div class="d-flex justify-content-center">
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star-ej-ifylld.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                    />
+                    <span class="ms-2 text-w">(4.5)</span>
+                  </div>
+                  <p class="fw-bold mt-2">
+                    <s class="text-danger">119kr</s> 109kr
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!--------- Produkt 3 ------------->
+
+            <div class="col">
+              <div
+                class="card h-100 border-0 light-shadow card-bg text-light text-center"
+              >
+                <!-- Bildcontainer med positionering -->
+                <a
+                  href="products/product-SummerTopic.html"
+                  class="text-decoration-none"
+                >
+                  <div class="position-relative">
+                    <!-- Standardbild -->
+                    <img
+                      src="Armband-Hover/Summer-Topic-LightBlue-S.jpg"
+                      class="card-img-top rounded main-img border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(28, 247, 255, 0.5)"
+                      alt="Produkt"
+                      loading="lazy"
+                    />
+                    <!-- Hoverbild -->
+                    <img
+                      src="Armband FÄRG/Summer-Topic-Lightblue-S.jpg"
+                      class="card-img-top rounded hover-img position-absolute top-0 start-0 border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(28, 247, 255, 0.5)"
+                      alt="Produkt Hover"
+                      loading="lazy"
+                    />
+                    <div
+                      class="badge position-absolute top-0 end-0 m-2 bg-warning text-dark fw-bold rounded-pill modul-info"
+                      style="z-index: 10"
+                    >
+                      Få kvar
+                    </div>
+                  </div>
+                </a>
+
+                <!---------- PRODUKTINFO ------------------------------->
+
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Summer Topic - Seablue</h5>
+                  <p class="text-white fw-bold">- 6mm</p>
+
+                  <div class="d-flex justify-content-center">
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star-ej-ifylld.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                    />
+                    <span class="ms-2 text-white">(4)</span>
+                  </div>
+                  <p class="fw-bold mt-2">
+                    <s class="text-danger">119kr</s> 109kr
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!--------- Produkt 4 ------------->
+
+            <div class="col">
+              <div
+                class="card h-100 border-0 light-shadow card-bg text-light text-center"
+              >
+                <!-- Bildcontainer med positionering -->
+                <a
+                  href="products/product-Rainbow.html"
+                  class="text-decoration-none"
+                >
+                  <div class="position-relative">
+                    <!-- Standardbild -->
+                    <img
+                      src="Armband-Hover/Rainbow-S.jpg"
+                      class="card-img-top rounded main-img border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(222, 255, 35, 0.5)"
+                      alt="Produkt"
+                      loading="lazy"
+                    />
+                    <!-- Hoverbild -->
+                    <img
+                      src="Armband FÄRG/rainbow-coloures-S.png"
+                      class="card-img-top rounded hover-img position-absolute top-0 start-0 border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(222, 255, 35, 0.5)"
+                      alt="Produkt Hover"
+                      loading="lazy"
+                    />
+                    <div
+                      class="badge position-absolute top-0 end-0 m-2 bg-success text-dark fw-bold rounded-pill modul-info"
+                      style="z-index: 10"
+                    >
+                      Sommardeal!
+                    </div>
+                  </div>
+                </a>
+
+                <!---------- PRODUKTINFO ------------------------------->
+
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Rainbow - Coloured</h5>
+                  <p class="text-white fw-bold">- 8mm</p>
+
+                  <div class="d-flex justify-content-center">
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star-halvt-ifylld.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star-ej-ifylld.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                    />
+                    <span class="ms-2 text-w">(3,5)</span>
+                  </div>
+                  <p class="fw-bold mt-2">
+                    <s class="text-danger">79kr</s> 59kr
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--------------------------------- PRODUKTER - RAD 4 ------------------------------------------------->
+
+        <div class="container">
+          <div
+            class="row row row-cols-2 row-cols-md-2 row-cols-lg-4 g-4 pb-5 pt-2"
+          >
+            <div class="col">
+              <div
+                class="card h-100 border-0 light-shadow card-bg text-light text-center"
+              >
+                <!-- Bildcontainer med positionering -->
+                <a
+                  href="products/product-Seashell.html"
+                  class="text-decoration-none"
+                >
+                  <div class="position-relative">
+                    <!-- Standardbild -->
+                    <img
+                      src="Armband-Hover/seashell-blue-S.jpg"
+                      class="card-img-top rounded main-img border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(62, 59, 255, 0.5)"
+                      alt="Produkt"
+                      loading="lazy"
+                    />
+                    <!-- Hoverbild -->
+                    <img
+                      src="Armband SILVER/seashell-blue-silver-S.png"
+                      class="card-img-top rounded hover-img position-absolute top-0 start-0 border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(62, 59, 255, 0.5)"
+                      alt="Produkt Hover"
+                      loading="lazy"
+                    />
+                  </div>
+                </a>
+
+                <!---------- PRODUKTINFO ------------------------------->
+
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Seashell - Blue & Silver</h5>
+                  <p class="text-white fw-bold">- 8/6mm</p>
+
+                  <div class="d-flex justify-content-center">
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star-ej-ifylld.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                    />
+                    <span class="ms-2 text-white">(4)</span>
+                  </div>
+                  <p class="fw-bold mt-2">
+                    <s class="text-danger">109kr</s> 99kr
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!--------- Produkt 2 ------------->
+            <div class="col">
+              <div
+                class="card h-100 border-0 light-shadow card-bg text-light text-center"
+              >
+                <!-- Bildcontainer med positionering -->
+                <a
+                  href="products/product-PremiumLuxury.html"
+                  class="text-decoration-none"
+                >
+                  <div class="position-relative">
+                    <!-- Standardbild -->
+                    <img
+                      src="Armband-Hover/Premium-Luxury-Blue-S.jpg"
+                      class="card-img-top rounded main-img border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(62, 59, 255, 0.5)"
+                      alt="Produkt"
+                      loading="lazy"
+                    />
+                    <!-- Hoverbild -->
+                    <img
+                      src="Armband FÄRG/luxery-premium-blue-S.png"
+                      class="card-img-top rounded hover-img position-absolute top-0 start-0 border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(62, 59, 255, 0.5)"
+                      alt="Produkt Hover"
+                      loading="lazy"
+                    />
+                  </div>
+                </a>
+
+                <!---------- PRODUKTINFO ------------------------------->
+
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">
+                    Premium Luxury - Black & Blue
+                  </h5>
+                  <p class="text-white fw-bold">- 6mm</p>
+
+                  <div class="d-flex justify-content-center">
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                    />
+                    <span class="ms-2 text-white">(5)</span>
+                  </div>
+                  <p class="fw-bold mt-2">
+                    <s class="text-danger">119kr</s> 99kr
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!--------- Produkt 3 ------------->
+
+            <div class="col">
+              <div
+                class="card h-100 border-0 light-shadow card-bg text-light text-center"
+              >
+                <!-- Bildcontainer med positionering -->
+                <a
+                  href="products/product-PremiumLuxury.html"
+                  class="text-decoration-none"
+                >
+                  <div class="position-relative">
+                    <!-- Standardbild -->
+                    <img
+                      src="Armband-Hover/Premium-Luxury-White-Blue-S.jpg"
+                      class="card-img-top rounded main-img border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(62, 59, 255, 0.5)"
+                      alt="Produkt"
+                      loading="lazy"
+                    />
+                    <!-- Hoverbild -->
+                    <img
+                      src="Armband FÄRG/premium-luxury-white-blue-S.png"
+                      class="card-img-top rounded hover-img position-absolute top-0 start-0 border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(62, 59, 255, 0.5)"
+                      alt="Produkt Hover"
+                      loading="lazy"
+                    />
+                  </div>
+                </a>
+
+                <!---------- PRODUKTINFO ------------------------------->
+
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">
+                    Premium Luxury - White & Blue
+                  </h5>
+                  <p class="text-white fw-bold">- 6mm</p>
+
+                  <div class="d-flex justify-content-center">
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star-ej-ifylld.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                    />
+                    <span class="ms-2 text-w">(4)</span>
+                  </div>
+                  <p class="fw-bold mt-2">
+                    <s class="text-danger">119kr</s> 99kr
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!--------- Produkt 4 ------------->
+
+            <div class="col">
+              <div
+                class="card h-100 border-0 light-shadow card-bg text-light text-center"
+              >
+                <!-- Bildcontainer med positionering -->
+                <a
+                  href="products/product-CrossStone.html"
+                  class="text-decoration-none"
+                >
+                  <div class="position-relative">
+                    <!-- Standardbild -->
+                    <img
+                      src="Armband-Hover/Cross-Fire-S.jpg"
+                      class="card-img-top rounded main-img border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(221, 152, 3, 0.5)"
+                      alt="Produkt"
+                      loading="lazy"
+                    />
+                    <!-- Hoverbild -->
+                    <img
+                      src="Armband FÄRG/cross-orange-S.png"
+                      class="card-img-top rounded hover-img position-absolute top-0 start-0 border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(221, 152, 3, 0.5)"
+                      alt="Produkt Hover"
+                      loading="lazy"
+                    />
+                  </div>
+                </a>
+
+                <!---------- PRODUKTINFO ------------------------------->
+
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Cross Stone - Fire</h5>
+                  <p class="text-white fw-bold">- 8mm</p>
+
+                  <div class="d-flex justify-content-center">
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star-halvt-ifylld.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star-ej-ifylld.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                    />
+                    <span class="ms-2 text-w">(3,5)</span>
+                  </div>
+                  <p class="fw-bold mt-2">
+                    <s class="text-danger">109kr</s> 99kr
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--------------------------------- PRODUKTER - RAD 5 ------------------------------------------------->
+
+        <div class="container">
+          <div
+            class="row row row-cols-2 row-cols-md-2 row-cols-lg-4 g-4 pb-5 pt-2"
+          >
+            <div class="col">
+              <div
+                class="card h-100 border-0 light-shadow card-bg text-light text-center"
+              >
+                <!-- Bildcontainer med positionering -->
+                <a
+                  href="products/product-Grafitti.html"
+                  class="text-decoration-none"
+                >
+                  <div class="position-relative">
+                    <!-- Standardbild -->
+                    <img
+                      src="Armband-Hover/Grafitti-orange-S.jpg"
+                      class="card-img-top rounded main-img border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(248, 185, 48, 0.5)"
+                      alt="Produkt"
+                      loading="lazy"
+                    />
+                    <!-- Hoverbild -->
+                    <img
+                      src="Armband FÄRG/grafitti-orange-S.png"
+                      class="card-img-top rounded hover-img position-absolute top-0 start-0 border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(248, 185, 48, 0.5)"
+                      alt="Produkt Hover"
+                      loading="lazy"
+                    />
+                  </div>
+                </a>
+
+                <!---------- PRODUKTINFO ------------------------------->
+
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Grafitti - Orange</h5>
+                  <p class="text-white fw-bold">- 8mm</p>
+
+                  <div class="d-flex justify-content-center">
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star-ej-ifylld.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                    />
+                    <span class="ms-2 text-white">(4)</span>
+                  </div>
+                  <p class="fw-bold mt-2">
+                    <s class="text-danger">119kr</s> 99kr
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!--------- Produkt 2 ------------->
+            <div class="col">
+              <div
+                class="card h-100 border-0 light-shadow card-bg text-light text-center"
+              >
+                <!-- Bildcontainer med positionering -->
+                <a
+                  href="products/product-Grafitti.html"
+                  class="text-decoration-none"
+                >
+                  <div class="position-relative">
+                    <!-- Standardbild -->
+                    <img
+                      src="Armband-Hover/Grafitti-Purple-S.jpg"
+                      class="card-img-top rounded main-img border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(113, 4, 255, 0.5)"
+                      alt="Produkt"
+                      loading="lazy"
+                    />
+                    <!-- Hoverbild -->
+                    <img
+                      src="Armband FÄRG/grafitti-purple-S.png"
+                      class="card-img-top rounded hover-img position-absolute top-0 start-0 border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(113, 4, 255, 0.5)"
+                      alt="Produkt Hover"
+                      loading="lazy"
+                    />
+                    <div
+                      class="badge position-absolute top-0 end-0 m-2 bg-dark text-light fw-bold rounded-pill modul-info"
+                      style="z-index: 10"
+                    >
+                      Storsäljare
+                    </div>
+                  </div>
+                </a>
+
+                <!---------- PRODUKTINFO ------------------------------->
+
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Grafitti - Purple</h5>
+                  <p class="text-white fw-bold">- 8mm</p>
+
+                  <div class="d-flex justify-content-center">
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star-ej-ifylld.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                    />
+                    <span class="ms-2 text-w">(4)</span>
+                  </div>
+                  <p class="fw-bold mt-2">
+                    <s class="text-danger">119kr</s> 99kr
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!--------- Produkt 3 ------------->
+
+            <div class="col">
+              <div
+                class="card h-100 border-0 light-shadow card-bg text-light text-center"
+              >
+                <!-- Bildcontainer med positionering -->
+                <a
+                  href="products/product-Palm.html"
+                  class="text-decoration-none"
+                >
+                  <div class="position-relative">
+                    <!-- Standardbild -->
+                    <img
+                      src="Armband-Hover/Palm-Yellow-S.jpg"
+                      class="card-img-top rounded main-img border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(255, 251, 25, 0.5)"
+                      alt="Produkt"
+                      loading="lazy"
+                    />
+                    <!-- Hoverbild -->
+                    <img
+                      src="Armband FÄRG/palm-yellow-S.png"
+                      class="card-img-top rounded hover-img position-absolute top-0 start-0 border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(255, 251, 25, 0.5)"
+                      alt="Produkt Hover"
+                      loading="lazy"
+                    />
+                    <div
+                      class="badge position-absolute top-0 end-0 m-2 bg-success text-dark fw-bold rounded-pill modul-info"
+                      style="z-index: 10"
+                    >
+                      Sommardeal!
+                    </div>
+                  </div>
+                </a>
+
+                <!---------- PRODUKTINFO ------------------------------->
+
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Djungle - Palmtree Yellow</h5>
+                  <p class="text-white fw-bold">- 8mm</p>
+
+                  <div class="d-flex justify-content-center">
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star-halvt-ifylld.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star-ej-ifylld.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                    />
+                    <span class="ms-2 text-white">(3.5)</span>
+                  </div>
+                  <p class="fw-bold mt-2">
+                    <s class="text-danger">79kr</s> 59kr
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!--------- Produkt 4 ------------->
+
+            <div class="col">
+              <div
+                class="card h-100 border-0 light-shadow card-bg text-light text-center"
+              >
+                <!-- Bildcontainer med positionering -->
+                <a
+                  href="products/product-Palm.html"
+                  class="text-decoration-none"
+                >
+                  <div class="position-relative">
+                    <!-- Standardbild -->
+                    <img
+                      src="Armband-Hover/Palm-Green-S.jpg"
+                      class="card-img-top rounded main-img border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(67, 255, 9, 0.5)"
+                      alt="Produkt"
+                      loading="lazy"
+                    />
+                    <!-- Hoverbild -->
+                    <img
+                      src="Armband FÄRG/palm-green-S.png"
+                      class="card-img-top rounded hover-img position-absolute top-0 start-0 border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(67, 255, 9, 0.5)"
+                      alt="Produkt Hover"
+                      loading="lazy"
+                    />
+                    <div
+                      class="badge position-absolute top-0 end-0 m-2 bg-success text-dark fw-bold rounded-pill modul-info"
+                      style="z-index: 10"
+                    >
+                      Sommardeal!
+                    </div>
+                  </div>
+                </a>
+
+                <!---------- PRODUKTINFO ------------------------------->
+
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Djungle - Palmtree Green</h5>
+                  <p class="text-white fw-bold">- 8mm</p>
+
+                  <div class="d-flex justify-content-center">
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star-ej-ifylld.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                    />
+                    <span class="ms-2 text-w">(4)</span>
+                  </div>
+                  <p class="fw-bold mt-2">
+                    <s class="text-danger">79kr</s> 59kr
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--------------------------------- PRODUKTER - RAD 4 ------------------------------------------------->
+
+        <div class="container">
+          <div
+            class="row row row-cols-2 row-cols-md-2 row-cols-lg-4 g-4 pb-5 pt-2"
+          >
+            <div class="col">
+              <div
+                class="card h-100 border-0 light-shadow card-bg text-light text-center"
+              >
+                <!-- Bildcontainer med positionering -->
+                <a
+                  href="products/product-CrossHematit.html"
+                  class="text-decoration-none"
+                >
+                  <div class="position-relative">
+                    <!-- Standardbild -->
+                    <img
+                      src="Armband-Hover/Cross-hematit-coloured-S.jpg"
+                      class="card-img-top rounded main-img border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(198, 114, 255, 0.5)"
+                      alt="Produkt"
+                      loading="lazy"
+                    />
+                    <!-- Hoverbild -->
+                    <img
+                      src="Armband FÄRG/hematit-cross-coloured-S.png"
+                      class="card-img-top rounded hover-img position-absolute top-0 start-0 border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(198, 114, 255, 0.5)"
+                      alt="Produkt Hover"
+                      loading="lazy"
+                    />
+                  </div>
+                </a>
+
+                <!---------- PRODUKTINFO ------------------------------->
+
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Cross Hematit - Coloured</h5>
+                  <p class="text-white fw-bold">- 6mm</p>
+
+                  <div class="d-flex justify-content-center">
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star-halvt-ifylld.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star-ej-ifylld.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                    />
+                    <span class="ms-2 text-white">(3.5)</span>
+                  </div>
+                  <p class="fw-bold mt-2">
+                    <s class="text-danger">119kr</s> 99kr
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!--------- Produkt 2 ------------->
+            <div class="col">
+              <div
+                class="card h-100 border-0 light-shadow card-bg text-light text-center"
+              >
+                <!-- Bildcontainer med positionering -->
+                <a
+                  href="products/product-CrossHematit.html"
+                  class="text-decoration-none"
+                >
+                  <div class="position-relative">
+                    <!-- Standardbild -->
+                    <img
+                      src="Armband-Hover/Cross-hematit-blue-S.jpg"
+                      class="card-img-top rounded main-img border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(66, 85, 255, 0.5)"
+                      alt="Produkt"
+                      loading="lazy"
+                    />
+                    <!-- Hoverbild -->
+                    <img
+                      src="Armband FÄRG/hematit-cross-blue-S.png"
+                      class="card-img-top rounded hover-img position-absolute top-0 start-0 border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(66, 85, 255, 0.5)"
+                      alt="Produkt Hover"
+                      loading="lazy"
+                    />
+                  </div>
+                </a>
+
+                <!---------- PRODUKTINFO ------------------------------->
+
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Cross Hematit - Blue</h5>
+                  <p class="text-white fw-bold">- 6mm</p>
+
+                  <div class="d-flex justify-content-center">
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star-ej-ifylld.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                    />
+                    <span class="ms-2 text-w">(4)</span>
+                  </div>
+                  <p class="fw-bold mt-2">
+                    <s class="text-danger">119kr</s> 99kr
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!--------- Produkt 3 ------------->
+
+            <div class="col">
+              <div
+                class="card h-100 border-0 light-shadow card-bg text-light text-center"
+              >
+                <!-- Bildcontainer med positionering -->
+                <a
+                  href="products/product-CrossHematit.html"
+                  class="text-decoration-none"
+                >
+                  <div class="position-relative">
+                    <!-- Standardbild -->
+                    <img
+                      src="Armband-Hover/Cross-hematit-pink-S.jpg"
+                      class="card-img-top rounded main-img border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(255, 39, 226, 0.5)"
+                      alt="Produkt"
+                      loading="lazy"
+                    />
+                    <!-- Hoverbild -->
+                    <img
+                      src="Armband FÄRG/hematit-cross-pink-S.png"
+                      class="card-img-top rounded hover-img position-absolute top-0 start-0 border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(255, 39, 226, 0.5)"
+                      alt="Produkt Hover"
+                      loading="lazy"
+                    />
+                  </div>
+                </a>
+
+                <!---------- PRODUKTINFO ------------------------------->
+
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Cross Hematit - Pink</h5>
+                  <p class="text-white fw-bold">- 6mm</p>
+
+                  <div class="d-flex justify-content-center">
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star-ej-ifylld.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                    />
+                    <span class="ms-2 text-white">(4)</span>
+                  </div>
+                  <p class="fw-bold mt-2">
+                    <s class="text-danger">119kr</s> 99kr
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!--------- Produkt 4 ------------->
+
+            <div class="col">
+              <div
+                class="card h-100 border-0 light-shadow card-bg text-light text-center"
+              >
+                <!-- Bildcontainer med positionering -->
+                <a
+                  href="products/product-CrossStone.html"
+                  class="text-decoration-none"
+                >
+                  <div class="position-relative">
+                    <!-- Standardbild -->
+                    <img
+                      src="Armband-Hover/Cross-Heaven-S.jpg"
+                      class="card-img-top rounded main-img border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(23, 123, 255, 0.5)"
+                      alt="Produkt"
+                      loading="lazy"
+                    />
+                    <!-- Hoverbild -->
+                    <img
+                      src="Armband FÄRG/cross-heaven-S.png"
+                      class="card-img-top rounded hover-img position-absolute top-0 start-0 border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(23, 123, 255, 0.5)"
+                      alt="Produkt Hover"
+                      loading="lazy"
+                    />
+                  </div>
+                </a>
+
+                <!---------- PRODUKTINFO ------------------------------->
+
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Cross Stone - Blue Heaven</h5>
+                  <p class="text-white fw-bold">- 8mm</p>
+
+                  <div class="d-flex justify-content-center">
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                    />
+                    <span class="ms-2 text-w">(5)</span>
+                  </div>
+                  <p class="fw-bold mt-2">
+                    <s class="text-danger">109kr</s> 99kr
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--------------------------------- PRODUKTER - RAD 5 ------------------------------------------------->
+
+        <div class="container">
+          <div
+            class="row row row-cols-2 row-cols-md-2 row-cols-lg-4 g-4 pb-4 pt-2"
+          >
+            <div class="col">
+              <div
+                class="card h-100 border-0 light-shadow card-bg text-light text-center"
+              >
+                <!-- Bildcontainer med positionering -->
+                <a
+                  href="products/product-ChackraWisedome.html"
+                  class="text-decoration-none"
+                >
+                  <div class="position-relative">
+                    <!-- Standardbild -->
+                    <img
+                      src="Armband-Hover/Chackra-White-S.jpg"
+                      class="card-img-top rounded main-img border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(60, 224, 253, 0.5)"
+                      alt="Produkt"
+                      loading="lazy"
+                    />
+                    <!-- Hoverbild -->
+                    <img
+                      src="Armband FÄRG/Chackra-White-S.jpg"
+                      class="card-img-top rounded hover-img position-absolute top-0 start-0 border-start border-bottom"
+                      style="box-shadow: 0 0.5rem 1rem rgba(251, 255, 44, 0.5)"
+                      alt="Produkt Hover"
+                      loading="lazy"
+                    />
+                  </div>
+                </a>
+
+                <!---------- PRODUKTINFO ------------------------------->
+
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Chackra Wisdome - White</h5>
+                  <p class="text-white fw-bold">- 8/6mm</p>
+
+                  <div class="d-flex justify-content-center">
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star-halvt-ifylld.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star-ej-ifylld.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                    />
+                    <span class="ms-2 text-white">(3.5)</span>
+                  </div>
+                  <p class="fw-bold mt-2">
+                    <s class="text-danger">99kr</s> 89kr
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!--------- Produkt 2 ------------->
+            <!--             <div class="col">
+              <div
+                class="card h-100 border-0 light-shadow card-bg text-light text-center"
+              >
+        
+
+                <div class="position-relative">
+             
+                  <img
+                    src="Armband-Hover/Premium-Luxury-White-Blue-S.jpg"
+                    class="card-img-top shadow-lg rounded main-img border-start border-bottom"
+                    alt="Produkt"
+                    loading="lazy"
+                  />
+    
+                  <img
+                    src="Armband FÄRG/premium-luxury-white-blue-S.png"
+                    class="card-img-top shadow-lg rounded hover-img position-absolute top-0 start-0 border-start border-bottom"
+                    alt="Produkt Hover"
+                    loading="lazy"
+                  />
+                </div>
+
+
+
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">
+                    Premium Luxury - White & Blue
+                  </h5>
+                  <p class="text-white fw-bold">- 6mm</p>
+
+                  <div class="d-flex justify-content-center">
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star-ej-ifylld.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                    />
+                    <span class="ms-2 text-w">(4)</span>
+                  </div>
+                  <p class="fw-bold mt-2">
+                    <s class="text-danger">119kr</s> 99kr
+                  </p>
+                </div>
+              </div>
+            </div> -->
+
+            <!--------- Produkt 3 ------------->
+
+            <!--             <div class="col">
+              <div
+                class="card h-100 border-0 light-shadow card-bg text-light text-center"
+              >
+               
+
+                <div class="position-relative">
+               
+                  <img
+                    src="Armband-Hover/Premium-Luxury-Blue-S.jpg"
+                    class="card-img-top shadow-lg rounded main-img"
+                    alt="Produkt"
+                    loading="lazy"
+                  />
+         
+                  <img
+                    src="Armband FÄRG/luxery-premium-blue-S.png"
+                    class="card-img-top shadow-lg rounded hover-img position-absolute top-0 start-0"
+                    alt="Produkt Hover"
+                    loading="lazy"
+                  />
+                </div>
+
+
+
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">
+                    Premium Luxury - Black & Blue
+                  </h5>
+                  <p class="text-white fw-bold">- 6mm</p>
+
+                  <div class="d-flex justify-content-center">
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                      loading="lazy"
+                    />
+                    <img
+                      src="bilder-maindel-index/star.png"
+                      alt="star"
+                      class="my-1"
+                      style="width: auto; height: 18px"
+                    />
+                    <span class="ms-2 text-white">(5)</span>
+                  </div>
+                  <p class="fw-bold mt-2">
+                    <s class="text-danger">119kr</s> 99kr
+                  </p>
+                </div>
+              </div>
+            </div> -->
+
+            <!--------- Produkt 4 ------------->
+
+            <!--                   <div class="col">
+                    <div
+                      class="card h-100 border-0 light-shadow card-bg text-light text-center"
+                    >
+                      <img
+                        src="Armband FÄRG/cross-heaven-S.png"
+                        class="card-img-top img-fluid shadow-lg rounded"
+                        alt="Produkt"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title fw-bold">Cross Stone - Blue Heaven</h5>
+                        <p class="text-white fw-bold">- 8mm</p>
+      
+                        <div class="d-flex justify-content-center">
+                          <img
+                            src="bilder-maindel-index/star.png"
+                            alt="star"
+                            class="my-1"
+                            style="width: auto; height: 18px"
+                            loading="lazy"
+                          />
+                          <img
+                            src="bilder-maindel-index/star.png"
+                            alt="star"
+                            class="my-1"
+                            style="width: auto; height: 18px"
+                            loading="lazy"
+                          />
+                          <img
+                            src="bilder-maindel-index/star.png"
+                            alt="star"
+                            class="my-1"
+                            style="width: auto; height: 18px"
+                            loading="lazy"
+                          />
+                          <img
+                            src="bilder-maindel-index/star.png"
+                            alt="star"
+                            class="my-1"
+                            style="width: auto; height: 18px"
+                            loading="lazy"
+                          />
+                          <img
+                            src="bilder-maindel-index/star-ej-ifylld.png"
+                            alt="star"
+                            class="my-1"
+                            style="width: auto; height: 18px"
+                          />
+                          <span class="ms-2 text-w">(4)</span>
+                        </div>
+                        <p class="fw-bold mt-2">
+                          <s class="text-danger">109kr</s> 99kr
+                        </p>
+                      </div>
+                    </div>
+                  </div> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Knappar - Till nästa sida -->
+
+      <!--       <div class="container my-5">
+        <div class="row justify-content-center">
+          <div class="col-6 col-md-auto d-flex justify-content-center">
+            <a
+              href="silver.products.html"
+              class="btn btn-dark border px-4 py-2 d-flex align-items-center justify-content-center text-center"
+              style="width: 220px; height: 50px"
+            >
+              <i class="bi bi-arrow-left mx-2"></i> Armband i Silver
+            </a>
+          </div>
+          <div class="col-6 col-md-auto d-flex justify-content-center">
+            <a
+              href="for-henne.html"
+              class="btn btn-light border px-4 py-2 d-flex align-items-center justify-content-center text-center"
+              style="width: 220px; height: 50px"
+            >
+              Armband för Dam <i class="bi bi-arrow-right mx-2"></i>
+            </a>
+          </div>
+        </div>
+      </div> -->
+
+      <section
+        class="text-center my-1 pb-3"
+        style="
+          background-image: url('Bilder-Header-Footer/header-for-her-2-S.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          width: 100%;
+          height: 225px;
+          display: flex;
+          flex-direction: column; /* Staplar innehållet vertikalt */
+          justify-content: flex-end; /* Flyttar innehållet längst ner */
+        "
+      >
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-6 col-md-auto d-flex justify-content-center">
+              <a
+                href="silver.products.html"
+                class="btn btn-dark border px-4 py-2 d-flex align-items-center justify-content-center text-center rounded-5 fw-bold"
+                style="width: 200px; height: 50px"
+              >
+                <i class="bi bi-caret-left-fill"></i> Armband i Silver
+              </a>
+            </div>
+            <div class="col-6 col-md-auto d-flex justify-content-center">
+              <a
+                href="for-henne.html"
+                class="btn btn-light border px-4 py-2 d-flex align-items-center justify-content-center text-center rounded-5 fw-bold"
+                style="width: 200px; height: 50px"
+              >
+                Armband för Henne <i class="bi bi-caret-right-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-------------------------------------- FÖRETAGSINFORMATION ------------------------------------------------>
+    <div
+      class="full-width"
+      style="
+        background-image: url('bilder-maindel-index/bkg-Rocks-Gold-upsidown.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+      "
+    >
+      <section class="container-fluid text-white my-1">
+        <div class="container my-1">
+          <div class="row pb-4">
+            <div
+              class="col d-flex flex-column align-items-center justify-content-center text-center"
+            >
+              <div
+                class="d-flex align-items-center flex-column mt-3 rounded-3 p-2"
+                style="
+                  background: linear-gradient(
+                    135deg,
+                    rgba(0, 0, 0, 0),
+                    rgba(34, 34, 34, 0),
+                    rgba(34, 34, 34, 0.1),
+                    rgba(247, 247, 247, 0.2)
+                  );
+                  padding: 20px 20;
+                "
+              >
+                <!----------- Logo ------------>
+
+                <img
+                  src="Logos/RD-RobinOhman-Sverige.png"
+                  alt="Logo-RD"
+                  style="width: 200px"
+                  loading="lazy"
+                  class="mt-3 mb-2"
+                />
+                <p>
+                  <b>Robin Design</b> är den självklara destinationen för både
+                  kvinnor och män som söker armband med en unik karaktär – där
+                  nordisk elegans möter förstklassig design och kvalitet. Våra
+                  kollektioner är noggrant utvalda för att spegla dagens behov
+                  av personlig stil, tidlös elegans och individuell
+                  uttrycksförmåga. Hos oss hittar du allt från stilrena armband
+                  i guld och silver till färgstarka och uttrycksfulla modeller
+                  som lyfter varje look med självsäker karisma.
+                </p>
+                <p>
+                  Vi skapar armband med både passion och precision där varje
+                  smycke formges med noggrann omsorg och tillverkas i
+                  högkvalitativa material. Hela processen, från din beställning
+                  till färdig produkt, hanteras av oss för att säkerställa att
+                  resultatet speglar just din stil. Oavsett om du söker en
+                  tidlös elegant design eller något mer färgstarkt och
+                  personligt, finns vi här för att förverkliga din vision.
+                </p>
+                <p>
+                  Våra armband är mer än bara accessoarer – de är en förlängning
+                  av din personlighet och ett sätt att uttrycka din stil med
+                  självsäkerhet. På vår hemsida strävar vi efter att erbjuda en
+                  inspirerande och smidig shoppingupplevelse, där varje smycke
+                  är noggrant utvalt för att lyfta din personliga stil. Utforska
+                  våra kollektioner och upptäck hur du kan förhöja din look med
+                  exklusiva armband som verkligen gör skillnad.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Ny FAQ-sektion -->
+
+      <div
+        class="full-width"
+        style="
+          background-image: url('bilder-maindel-index/bkg-Footer-3-Gray.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          width: 100%;
+          position: relative;
+          z-index: 1;
+        "
+      >
+        <section class="pt-1 pb-5 mb-1">
+          <div class="container text-center">
+            <div class="mb-2"></div>
+            <div
+              class="d-flex align-items-center flex-column"
+              style="
+                background: linear-gradient(
+                  315deg,
+                  rgba(0, 0, 0, 0),
+                  rgba(34, 34, 34, 0),
+                  rgba(34, 34, 34, 0.1),
+                  rgba(247, 247, 247, 0.2)
+                );
+                padding: 20px 40px 20px 40px;
+                border-radius: 10px;
+              "
+            >
+              <i
+                class="bi bi-question-circle-fill text-white"
+                style="font-size: 2rem"
+              ></i>
+              <h2 class="fw-bold text-white">
+                Vill du köpa ett armband från oss från Robin Design - Eller har
+                du andra frågor?
+              </h2>
+              <p class="lead mb-4 text-white">
+                Vi har svaren! Ta en titt i vår FAQ där vi samlat massor av
+                nyttig info.
+              </p>
+
+              <!-------- Knapp ---------->
+              <a
+                href="FAQ.html"
+                class="btn btn-light text-dark btn-sm mb-1 mt-3 fs-6 text fw-bold px-3 rounded-pill"
+                >FAQ <i class="bi bi-caret-right-fill"></i
+              ></a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!---------------------------- FOOTER ----------------------------------------------->
+
+    <!------------- TOP-FOOTER ------------>
+    <div
+      class="full-width"
+      style="
+        background-image: url('bilder-maindel-index/bkg-Rocks-Silver.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+      "
+    >
+      <section class="container text-white py-4 mb-1">
+        <div class="row text-center">
+          <!-------------- Fri frakt --------------->
+
+          <div class="col-12 col-md-3">
+            <section class="d-flex flex-column align-items-center">
+              <img
+                src="Bilder-Header-Footer/postbil-vit-S.png"
+                alt="Fri frakt-bild"
+                style="width: 70px; height: auto"
+                loading="lazy"
+              />
+              <p class="fw-bold mb-0">FRAKT 18:-</p>
+            </section>
+          </div>
+
+          <!-------------- Trygga köp -------------->
+
+          <div class="col-12 col-md-3">
+            <section class="d-flex flex-column align-items-center">
+              <img
+                src="Bilder-Header-Footer/Tryggt-köp-S.png"
+                alt="Trygga köp-bild"
+                style="width: 70px; height: auto"
+                loading="lazy"
+              />
+              <p class="fw-bold mb-0">TRYGGA KÖP</p>
+            </section>
+          </div>
+
+          <!------------ 14 dagar öppet köp --------->
+
+          <div class="col-12 col-md-3">
+            <section class="d-flex flex-column align-items-center">
+              <img
+                src="Bilder-Header-Footer/pilar-retur-white-S.png"
+                alt="14 dagar öppet köp-bild"
+                style="width: 70px; height: auto"
+                loading="lazy"
+              />
+              <p class="fw-bold mb-0">14 DAGAR ÖPPET KÖP</p>
+            </section>
+          </div>
+
+          <!------------ Garanti --------->
+
+          <div class="col-12 col-md-3">
+            <section class="d-flex flex-column align-items-center">
+              <img
+                src="Bilder-Header-Footer/Garanti.png"
+                alt="14 dagar öppet köp-bild"
+                class="mt-3 mt-md-0"
+                style="width: 65px; height: auto"
+                loading="lazy"
+              />
+              <p class="fw-bold mt-2 mt-md-1">GARANTI</p>
+            </section>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!----------------------------------------- MAIN-FOOTER --------------------------->
+    <div
+      class="full-width"
+      style="
+        background-image: url('bilder-maindel-index/bkg-Footer-1-Gray.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+      "
+    >
+      <footer class="text-white py-4 my-1">
+        <div class="container">
+          <div class="row">
+            <!------------ Logotyp & Beskrivning -------------->
+
+            <div class="col-md-4 text-center text-md-start">
+              <a href="index.html">
+                <img
+                  src="Bilder-Header-Footer/logo-RobinDesign-sverige-footer-S.png"
+                  class="mb-3"
+                  style="width: 180px"
+                  alt="Logo-RD"
+                  loading="lazy"
+                />
+              </a>
+              <p class="text-white mt-3">
+                Handgjorda armband från grunden <br />– Med kvalitet, passion
+                och omtanke!
+              </p>
+            </div>
+
+            <!---------------- Navigationslänkar---------------->
+
+            <div class="col-md-4 text-center">
+              <h5 class="fw-bold text-white pb-1">Snabblänkar</h5>
+              <ul class="list-unstyled links">
+                <li>
+                  <a
+                    href="all.products.html"
+                    class="text-white text-decoration-none link-secondary"
+                    >Alla armband</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="skapa-ditt-eget-armband.html"
+                    class="text-white text-decoration-none link-secondary"
+                    >Kattarmband</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="picture-gallery.html"
+                    class="text-white text-decoration-none link-secondary"
+                    >Bildgalleri</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="contact-page.html"
+                    class="text-white text-decoration-none link-secondary"
+                    >Kontakt</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="FAQ.html"
+                    class="text-white text-decoration-none link-secondary"
+                    >Faq</a
+                  >
+                </li>
+                <li>
+                  <i class="bi bi-suit-heart-fill"></i>
+                </li>
+              </ul>
+            </div>
+
+            <!-------------- Kontakt & Nyhetsbrev ------------->
+
+            <div class="col-md-4 text-center text-md-end">
+              <h5 class="fw-bold text-white">Kontakt</h5>
+              <p class="mb-1">
+                robindesignswe@gmail.com
+                <i class="bi bi-envelope-fill ms-2"></i>
+              </p>
+              <p class="mb-1">
+                Stockholm, Sverige <i class="bi bi-pin-fill ms-2"></i>
+              </p>
+              <p>+4673 713 38 20 <i class="bi bi-telephone-fill ms-2"></i></p>
+
+              <!------------ Nyhetsbrev ----------------------->
+              <h6 class="fw-bold text-white mt-5 mb-3">
+                Prenumerera på vårt nyhetsbrev
+              </h6>
+              <form class="d-flex flex-column flex-sm-row gap-2">
+                <input
+                  type="email"
+                  class="form-control form-control-sm rounded-pill modul-info"
+                  placeholder="Din e-postadress..."
+                  required
+                />
+                <button
+                  type="submit"
+                  class="btn btn-dark text-light btn-sm fs-6 text px-3 rounded-pill border border-white"
+                >
+                  Prenumerera
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-------------- Copyright & Sociala medier --------->
+
+          <div class="row mt-3 text-center">
+            <div class="col-12">
+              <div class="mt-2">
+                <!--                 <a href="#" class="text-white mx-2">
+                  <img
+                    src="Bilder-Header-Footer/images-fb-vit-S.png"
+                    style="width: 35px; height: auto"
+                    alt="social-media-facebook"
+                    class="social-media-icon"
+                    loading="lazy"
+                /></a> -->
+                <a
+                  href="https://www.instagram.com/robindesignswe/"
+                  target="_blank"
+                  class="text-white mx-2"
+                  ><img
+                    src="Bilder-Header-Footer/images-insta-vit.png"
+                    style="width: 35px; height: auto"
+                    alt="social-media-instagram"
+                    class="social-media-icon"
+                    loading="lazy"
+                /></a>
+                <!--                 <a href="#" class="text-white mx-2"
+                  ><img
+                    src="Bilder-Header-Footer/images-tiktok-vit.png"
+                    style="width: 35px; height: auto"
+                    alt="social-media-tiktok"
+                    class="social-media-icon"
+                    loading="lazy"
+                /></a> -->
+              </div>
+              <div
+                class="container d-flex justify-content-center align-items-center pt-3"
+              >
+                <img
+                  src="Texter/RobinDesign-Text-2.png"
+                  alt="Rullande produktbilder i guld"
+                  class="img-fluid"
+                  style="height: 65px; width: auto"
+                  loading="lazy"
+                />
+              </div>
+              <div>
+                <p class="text-white mt-3">© 2025 Robin Design Sverige.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-------------------------------- BOTTOM-FOOTER ---------------------------------------------->
+
+    <div
+      class="full-width"
+      style="
+        background-image: url('bilder-maindel-index/bkg-Rocks-Gold-footer.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+      "
+    >
+      <section class="container-fluid py-3">
+        <div class="row justify-content-center">
+          <div class="col text-center">
+            <!--             <img
+              src="Bilder-Header-Footer/klarna.png"
+              alt="klarna"
+              class="img-fluid mx-2"
+              style="max-width: 60px"
+              loading="lazy"
+            />
+            <img
+              src="Bilder-Header-Footer/apple-pay.png"
+              alt="apple-pay"
+              class="img-fluid mx-2"
+              style="max-width: 60px"
+              loading="lazy"
+            />
+            <img
+              src="Bilder-Header-Footer/mastercard.png"
+              alt="mastercard"
+              class="img-fluid mx-2"
+              style="max-width: 60px"
+              loading="lazy"
+            /> -->
+            <img
+              src="Bilder-Header-Footer/swish.png"
+              alt="swish"
+              class="img-fluid mx-2"
+              style="max-width: 80px"
+              loading="lazy"
+            />
+            <!--             <img
+              src="Bilder-Header-Footer/swedbank.png"
+              alt="swedbank"
+              class="img-fluid mx-2"
+              style="max-width: 60px"
+              loading="lazy"
+            />
+            <img
+              src="Bilder-Header-Footer/paypal.png"
+              alt="paypal"
+              class="img-fluid mx-2"
+              style="max-width: 60px"
+              loading="lazy"
+            />
+            <img
+              src="Bilder-Header-Footer/visa.png"
+              alt="visa"
+              class="img-fluid mx-2"
+              style="max-width: 60px"
+              loading="lazy"
+            />
+            <img
+              src="Bilder-Header-Footer/google-pay.png"
+              alt="google-pay"
+              class="img-fluid mx-2"
+              style="max-width: 60px"
+              loading="lazy"
+            /> -->
+          </div>
+        </div>
+      </section>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="..."
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
